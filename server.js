@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const memorydb = require('./src/db/memorydb-handler');
 const sandboxdb = require('./src/db/sandboxdb-handler');
 const userSeedHandler = require('./src/users/seed/seedHandler');
 const postsSeedHandler = require('./src/posts/seed/seedHandler');
