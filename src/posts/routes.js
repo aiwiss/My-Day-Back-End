@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const roles = require('../users/roles');
 const auth = require('../middleware/auth');
-const db = require('../db/memorydb-handler');
 
 const service = require('../posts/postService');
 
