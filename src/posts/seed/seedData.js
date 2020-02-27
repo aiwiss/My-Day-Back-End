@@ -1,69 +1,70 @@
 const posts = [
   {
-    title: 'Post Title',
     content: '',
-    author: 'user',
-    public: true
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
   },
   {
-    title: 'Post Title',
     content: '',
-    author: 'user',
-    public: false
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
   },
   {
-    title: 'Post Title',
     content: '',
-    author: 'user',
-    public: true
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
   },
   {
-    title: 'Post Title',
     content: '',
-    author: 'user',
-    public: true
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
+  },{
+    content: '',
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
   },
   {
-    title: 'Post Title',
     content: '',
-    author: 'user',
-    public: false
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
+  },{
+    content: '',
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
   },
   {
-    title: 'Post Title',
     content: '',
-    author: 'user',
-    public: true
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
+  },{
+    content: '',
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
   },
   {
-    title: 'Post Title',
     content: '',
-    author: 'user',
-    public: true
-  },
-  {
-    title: 'Post Title',
-    content: '',
-    author: 'user',
-    public: true
-  },
-  {
-    title: 'Post Title',
-    content: '',
-    author: 'user',
-    public: false
-  },
-  {
-    title: 'Post Title',
-    content: '',
-    author: 'user',
-    public: true
-  },
-  {
-    title: 'Post Title',
-    content: '',
-    author: 'user',
-    public: true
+    author: 'testuser',
+    public: true,
+    emotion: 'happy',
+    favoriteOf: ['testuser2', 'testuser3']                    
   }
 ];
 

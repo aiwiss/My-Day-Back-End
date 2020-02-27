@@ -9,7 +9,6 @@ Curabitur malesuada ac est in fermentum. In ligula enim, lobortis sed condimentu
 module.exports.seedPosts = function() {
   posts.forEach(async (post, index) => {
     post.content = postContent;
-    post.title = `${post.title} #${index}`;
     post.author = `${post.author}${index}`
     const dbPost = new Post(post);
     await dbPost.save();

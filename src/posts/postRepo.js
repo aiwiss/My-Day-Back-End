@@ -26,18 +26,15 @@ module.exports.createPost = async post => {
 
 module.exports.updatePost = async (id, updatedPostData) => {
   let updatedPost = await Post.findByIdAndUpdate(id, updatedPostData, {new: true, useFindAndModify: false});
-
-  if (!updatedPost) throw new Error('post not found');
-
+  
   return updatedPost;
 }
 
 module.exports.deletePost = async id => {
   const post = await Post.findById(id);
-  if (!post) throw new Error('post not found');
-
-  const success = await Post.deleteOne(post);
-  if (!success) throw new Error('delete operation failed');
+  if (!post) return null;
+  
+  await Post.deleteOne(post);
 
   return post;
 }

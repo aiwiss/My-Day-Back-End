@@ -1,69 +1,69 @@
 const users = [
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   },
   {
-    email: '',
+    username: '',
+    pseudoname: '',
     hash: '$2y$10$7/exe8BC6E6u8HLqvEYDP.5h3PN3K9CZ/7XAATRnVrzFmyrW0DNcW',
-    role: 'user',
-    gender: 'male'
+    role: 'user'
   }
 ];
 

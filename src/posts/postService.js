@@ -17,19 +17,25 @@ module.exports.getAll = async (page, limit) => {
 }
 
 module.exports.create = async post => {
-  if (!post.author) throw new Error('create operation failed: missing author');
+  if (!post.author) throw new Error('missing author');
 
   return await repo.createPost(post);
 }
 
 module.exports.update = async (id, post) => {
-  return await repo.updatePost(id, post);
+  const updatedPost = await repo.updatePost(id, post);
+  if (!updatedPost) throw new Error('post not found');
+
+  return updatedPost;
 }
 
 module.exports.delete = async id => {
-  return await repo.deletePost(id);
+  const deletedPost = await repo.deletePost(id);
+  if (!deletedPost) throw new Error('post not found');
+  
+  return deletedPost;
 }
 
-module.exports.deleteUserPosts = async id => {
-  return await repo.deleteUserPosts(id);
+module.exports.deleteUserPosts = async username => {
+  return await repo.deleteUserPosts(username);
 }
