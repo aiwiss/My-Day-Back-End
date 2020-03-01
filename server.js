@@ -2,17 +2,18 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const sandboxdb = require('./src/db/sandboxdb-handler');
+// const db = require('./src/db/mongodb-handler');
+const db = require('./src/db/memorydb-handler');
 const userSeedHandler = require('./src/users/seed/seedHandler');
 const postsSeedHandler = require('./src/posts/seed/seedHandler');
 
 const PORT = process.env.PORT;
 const seedDB = false;
 
-sandboxdb.connect();
+db.connect();
 
-// seedDB && userSeedHandler.seedUsers();
 seedDB && postsSeedHandler.seedPosts();
+seedDB && userSeedHandler.seedPosts();
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());

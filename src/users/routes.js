@@ -15,7 +15,7 @@ router.delete('/:id', auth(roles.admin), deleteUser);
 module.exports = router;
 
 // TODO: Implement error handling middleware
-function login(req, res) {
+async function login(req, res) {
   try {
     const user = await service.login(req.body);
     res.json(user);
@@ -24,7 +24,7 @@ function login(req, res) {
   }
 }
 
-function register(req, res) {
+async function register(req, res) {
   try {
     const user = await service.register(req.body);
     res.json(user);
@@ -33,7 +33,7 @@ function register(req, res) {
   }
 }
 
-function getByUsername(req, res) {
+async function getByUsername(req, res) {
   try {
     const user = await service.getByUsername(req.params.username);
     res.json(user);
@@ -42,7 +42,7 @@ function getByUsername(req, res) {
   }
 }
 
-function getAll(req, res) {
+async function getAll(req, res) {
   try {
     const users = service.getAll(req.params.requestorId);
     res.json(users);
@@ -51,7 +51,7 @@ function getAll(req, res) {
   }
 }
 
-function update(req, res) {
+async function update(req, res) {
   try {
     const updatedUser = service.update(req.body);
     res.json(updatedUser);
@@ -60,7 +60,7 @@ function update(req, res) {
   }
 }
 
-function deleteUser(req, res, next) {
+async function deleteUser(req, res, next) {
   try {
     const deletedUser = service.delete(req.params.id);
     res.json(deletedUser);
